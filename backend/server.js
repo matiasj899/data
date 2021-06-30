@@ -9,12 +9,12 @@ connectDb();
 const app = express();
 app.use(cors())
 
-const user = require("../data-warehouse/src/routes/user");
-const region = require("../data-warehouse/src/routes/region");
-const pais = require("../data-warehouse/src/routes/pais");
-const ciudad = require("../data-warehouse/src/routes/Ciudad");
-const compania = require("../data-warehouse/src/routes/companias");
-const contactos = require("../data-warehouse/src/routes/contactos");
+const user = require("../backend/src/routes/user");
+const region = require("../backend/src/routes/region");
+const pais = require("../backend/src/routes/pais");
+const ciudad = require("../backend/src/routes/Ciudad");
+const compania = require("../backend/src/routes/companias");
+const contactos = require("../backend/src/routes/contactos");
 const PORT = process.env.PORT || 5000;
 const server = app.listen(
   PORT,
