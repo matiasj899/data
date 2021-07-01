@@ -32,6 +32,9 @@ app.use(express.json());
 const path = require("path");
 
 //rutas
+app.get('/',(req,res)=>{
+  res.send("hello world")
+})
 app.use("/Data-Warehouse/User", user);
 app.use("/Data-Warehouse/Region", region);
 app.use("/Data-Warehouse/Pais", pais);
